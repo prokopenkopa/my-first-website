@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой первый сайт</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__inner__logotip"><img src="logotip.png" alt="Логотип футбольной школы">
+                </div>
+                <a href="#" class="logo"> <span> </span></a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">Фотогалерея</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Ответы на вопросы</a></li>
+                        <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
+                        <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-label="Меню">
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">Детская футбольная школа <br> "Морозовец" <br>в городе Ликино-Дулево</h1>
+                <p class="hero__subtitle">Детская футбольная школа "Морозовец" в городе Ликино-Дулево приглашает детей
+                    от 3-х лет на занятия, которые проводятся 3 раза в неделю. У нас удобное время для тренировок, а
+                    каждый ребенок получает индивидуальный подход. Тренировки проводят несколько тренеров, а дети будут
+                    участвовать в соревнованиях различного уровня в других городах России, а также будут играть с
+                    известными клубными школами "Спартак", "ЦСКА", "Динамо", "Локомотив". Кроме того, каждый год мы
+                    проводим спортивные сборы и используем современный спортивный инвентарь. Записаться к нам можно по
+                    телефону +7 (123) 456-78-90.
+                    Звоните по телефонам: +71234567890, +71234567890, +1234567890
+                    +7 (123) 456-78-90 Россия, г. Москва и Московская область.</p>
+                <div class="hero__buttons">
+                    <a href="#menu" class="btn btn--primary">Фотогалерея</a>
+                    <a href="#contacts" class="btn btn--outline">Контакты</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about__inner">
+                    <!--<div class="about__image">
+                        <img src="logotip.png" alt="">
+                    </div>-->
+                    <div class="about__content">
+                        <h2 class="section-title">Ответы на частые вопросы</h2>
+                        <div class="section-title__about__text">
+                            <h3 class="about__text">Как часто проводятся занятия в футбольной школе "Морозовец"?</h3>
+                            <i class="fa-solid fa-futbol fa-flip"></i>
+                            <p>Занятия проводятся 3 раза в неделю, а также есть индивидуальные занятия.</p>
+                            <h3 class="about__text">С какого возраста можно записывать детей в футбольную школу
+                                "Морозовец"?
+                            </h3>
+                            <i class="fa-solid fa-futbol fa-flip"></i>
+                            <p>Запись детей осуществляется с 3-х лет.</p>
+                            <h3 class="about__text">Участвуют дети в футбольной школе "Морозовец" в соревнованиях в
+                                других
+                                городах России?</h3>
+                            <i class="fa-solid fa-futbol fa-flip"></i>
+                            <p>Дети будут участвовать в соревнованиях различного уровня в других городах России.</p>
+                            <h3 class="about__text">Сколько тренеров работает в футбольной школе "Морозовец"</h3>
+                            <i class="fa-solid fa-futbol fa-flip"></i>
+                            <p>Тренировки проводят сразу несколько тренеров?</p>
+                        </div>
+                        <!--<ul class="about__features">
+                            <li class="feature-item">
+                                <span></span>
+                            </li>
+                            <li class="feature-item">
+                                <span>Достоинства продукта</span>
+                            </li>
+                            <li class="feature-item">
+                                <span>Достоинства продукта</span>
+                            </li>
+                            <li class="feature-item">
+                                <span>Достоинства продукта</span>
+                            </li>
+                        </ul>-->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2 class="section-title">Наша фотогалерея</h2>
+                <div class="menu__content active" id="coffee">
+                    <div class="menu__grid">
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <img src="Messi.jpg" class="img-same-size" alt="">
+                                <h3 class="menu-item__title">Фото № 1</h3>
+                                <span class="menu-item__price">Амплуа: нападающий</span>
+                            </div>
+                            <p class="menu-item__description">В футбольной школе "Морозовец" растут молодые таланты</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <img src="Ronaldinio.jpg" class="img-same-size" alt="">
+                                <h3 class="menu-item__title">Фото № 2</h3>
+                                <span class="menu-item__price">Амплуа: полузащитник</span>
+                            </div>
+                            <p class="menu-item__description">В футбольной школе"Морозовец" выросла легенда мирового
+                                футбола</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <img src="Roberto.jpg" class="img-same-size" alt="">
+                                <h3 class="menu-item__title">Фото № 3</h3>
+                                <span class="menu-item__price">Амплуа: защитник</span>
+                            </div>
+                            <p class="menu-item__description">Лучший защитник в истории футбольного клуба "Морозовец"
+                            </p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <img src="Yashin.jpg" class="img-same-size" alt="">
+                                <h3 class="menu-item__title">Фото № 4</h3>
+                                <span class="menu-item__price">Амплуа: вратарь</span>
+                            </div>
+                            <p class="menu-item__description">Этого вратаря не пробьет даже пушка, завершенные матчи
+                                тому в подтверждение</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <img src="Cristiano Ronaldo.jpg" class="img-same-size" alt="">
+                                <h3 class="menu-item__title">Фото № 5</h3>
+                                <span class="menu-item__price">Амплуа: правый нападающий</span>
+                            </div>
+                            <p class="menu-item__description">Еще один золотой самородок воспитанный футбольным клубом
+                                "Морозовец"</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <img src="Romanchev.jpg" class="img-same-size" alt="">
+                                <h3 class="menu-item__title">Фото № 6</h3>
+                                <span class="menu-item__price">Тренер</span>
+                            </div>
+                            <p class="menu-item__description">Самый важный игрок команды, без него у нас бы не было
+                                столько побед</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <h2 class="section-title">Отзывы о нас</h2>
+                <div class="reviews__slider">
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Благодарю вас от всей души. Ваша работа действительно впечатляет и
+                            вдохновляет наших детей. Спасибо за ваш труд и профессионализм!</p>
+                        <div class="review__author">
+                            <img src="Puzobruxov.jpg" alt="" class="review__photo">
+                            <span class="review__name">Пузобрюхов Артем Душанович</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star fa-pulse"></i>
+                            <i class="fas fa-star fa-pulse"></i>
+                            <i class="fas fa-star fa-pulse"></i>
+                            <i class="fas fa-star fa-pulse"></i>
+                            <i class="fas fa-star fa-pulse"></i>
+                        </div>
+                        <p class="review__text">❤️❤️❤️❤️❤️Хочу выразить огромную благодарность всему коллективу
+                            футбольной школы "Морозовец"❤️❤️❤️❤️❤️</p>
+                        <div class="review__author">
+                            <img src="Maxripa.jpg" alt="" class="review__photo">
+                            <span class="review__name">Фигуля Махрипа Харипулаевна</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star fa-spin"></i>
+                            <i class="fas fa-star fa-spin"></i>
+                            <i class="fas fa-star fa-spin"></i>
+                            <i class="fas fa-star fa-spin"></i>
+                            <i class="fas fa-star fa-spin"></i>
+                        </div>
+                        <p class="review__text">Вы большие молодцы!!! Новых Вам побед!!! Двигайтесь только вперед и не
+                            шагу назад!!!</p>
+                        <div class="review__author">
+                            <img src="Yazelopov.jpg" alt="" class="review__photo">
+                            <span class="review__name">Яйцелопов Максим Героимович</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__info">
+                        <h2 class="section-title">Контакты</h2>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span>Ленинский пер., 1,Ликино-Дулёво, Московская обл., 142670</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span>+7(123)456-78-90</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span> NASA@mail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock contact-icon"></i>
+                            <span> Пн-Пт <br> с 10-00 до 20-00</span>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link" aria-label="Telegram"><i
+                                    class="fab fa-telegram-plane"></i></a>
+                        </div>
+                    </div>
+                    <div class="contacts__map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2248.661161278571!2d38.95290434176311!3d55.69487853228982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1759360361248!5m2!1sru!2sru"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <a href="#" class="logo">Children's football school <span> in the city of Likino-Dulevo</span></a>
+                    <p class="footer__text"></p>
+                </div>
+                <div class="footer__nav">
+                    <h3 class="footer__title">Навигация</h3>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Главная</a></li>
+                        <li><a href="#menu" class="footer__link">Фотогалерея</a></li>
+                        <li><a href="#about" class="footer__link">Ответы на вопросы</a></li>
+                        <li><a href="#reviews" class="footer__link">Отзывы</a></li>
+                        <li><a href="#contacts" class="footer__link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__subscribe">
+                    <h3 class="footer__title"></h3>
+                    <p class="footer__text">Подпишитесь на наши новости в социальных сетях</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email" class="subscribe-input">
+                        <button type="submit" class="subscribe-btn"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© Copyright 2025</p>
+                <button class="footer__bottom__button"><a href="Screamer.html"><i
+                            class="fa-solid fa-skull-crossbones fa-flip"></i>Не нажимать<i
+                            class="fa-solid fa-skull-crossbones fa-flip"></i></a></button>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
