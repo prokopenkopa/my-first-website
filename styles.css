@@ -184,6 +184,13 @@ ul {
     position: relative;
 }
 
+.header__inner__logotip {
+    transition: 1.6s;
+}
+
+.header__inner__logotip:hover {
+    transform: rotate(360deg);
+}
 
 .logo {
     font-size: 1.8rem;
@@ -703,6 +710,8 @@ i {
 }
 
 .footer__bottom__button {
+    display: flex;
+    align-items: center;
     background: #ddf922;
     color: black;
     width: 250px;
@@ -719,7 +728,25 @@ i {
     transition: var(--transition);
 }
 
+.link1 {
+    display: flex;
+    align-items: center;
+}
+
+.footer__text__button {
+    margin: 0;
+    color: black;
+
+}
+
 /* Адаптивность */
+
+@media (max-width: 1800px) {
+    .hero__title {
+        margin-top: 100px;
+    }
+}
+
 
 @media (max-width: 992px) {
     .section-title {
